@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="WarGameXam.Styles.GeneralDeviceStyles">
+
+    <OnIdiom  x:TypeArguments="x:Double" Tablet="30" Phone="20" x:Key="PageSpacing" />
+    <OnIdiom  x:TypeArguments="Thickness" Tablet="30" Phone="20" x:Key="PagePadding" />
+
+    <Style TargetType="Button" x:Key="MainButtonStyle">
+        <Setter Property="HeightRequest">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="100"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="FontSize">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="28"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+    </Style>
+
+    <Style TargetType="Image" x:Key="CardImageStyle">
+        <Setter Property="HeightRequest">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="300" Tablet="600"/>
+            </Setter.Value>
+        </Setter>
+             <Setter Property="WidthRequest">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="250" Tablet="500"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Aspect" Value="AspectFit"/>
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+    </Style>
+
+    <Style TargetType="StackLayout" x:Key="CardImageStack">
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+        <Setter Property="Spacing" Value="0"/>
+    </Style>
+
+    
+    <Style TargetType="Grid" x:Key="CardGridStyle">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+        <Setter Property="ColumnSpacing" Value="10"/>
+        <Setter Property="RowSpacing" Value="0"/>
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+
+    <Style TargetType="Image" x:Key="LogoImageStyle">
+        <Setter Property="HeightRequest">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="100" Tablet="200"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+        <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+    </Style>
+
+
+    <Style TargetType="Label" x:Key="MainTitleStyle">
+        <Setter Property="FontSize">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="22" Tablet="28"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="NormalTitleStyle">
+        <Setter Property="FontSize">
+            <Setter.Value>
+                <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="22"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+         <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+    </Style>
+
+</ResourceDictionary>
